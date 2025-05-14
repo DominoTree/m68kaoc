@@ -33,9 +33,13 @@ exit:                       ;;; exit the app
     trap   #1               ; call gemdos (exit)s
 
 
+section bss
+
+old_sp       ds.l 1
+file_handle  ds.b 1
+
 
 section data
 
-old_sp       dc.l 0
 file_name    dc.b 'input.txt',0
-file_handle  dc.b 0
+
