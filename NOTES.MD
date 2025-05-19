@@ -7,3 +7,5 @@ addq is used to reset the stack pointer because it is quick but can only addq ca
 data segment contains values
 
 bss segment contains references to zero-initialize but no values (minimizing binary size)
+
+jsr and rts reset the stack pointer automatically

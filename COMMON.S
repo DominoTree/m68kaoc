@@ -30,7 +30,7 @@ enter_super:                ;;; enter super mode and store stack pointer
     clr.l -(sp)             ; zero argument  (same as move.l #0)
     move.w #32,-(sp)        ; push opcode 32 (Super)
     trap   #1               ; call gemdos
-    ; addq.l #6,sp            ; reset stack pointer
+    addq.l #6,sp            ; reset stack pointer
     move.l d0,old_sp        ; store the old stack pointer
     rts
 
@@ -38,7 +38,7 @@ exit_super:                 ;;; exit super mode and restore stack pointer
     move.l old_sp,-(sp)     ; push old stack pointer
     move.w #32,-(sp)        ; push Super() again to go back to user mode
     trap   #1               ; call gemdos
-    ; addq.l #6,sp
+    addq.l #6,sp
     rts
 
 exit:                       ;;; exit the app
