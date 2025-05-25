@@ -42,7 +42,7 @@ exit_super:                 ;;; exit super mode and restore stack pointer
     rts
 
 exit:                       ;;; exit the app
-    move.l 0,-(sp)          ; opcode 0
+    clr.l  -(sp)            ; opcode 0
     trap   #1               ; call gemdos (exit)
 
 
