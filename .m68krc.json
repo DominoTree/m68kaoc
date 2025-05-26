@@ -1,25 +1,28 @@
 {
-	"format": {
-		"align": {
+  "format": {
+    "align": {
       "mnemonic": 4,
       "operands": 16,
       "comment": 48,
       "operator": 0,
       "value": 0,
       "indentStyle": "space",
-      "tabSize": 8,
-      "autoExtend": "line"
+      "tabSize": 4,
+      "autoExtend": "block"
     },
-		"case": "lower",
-		"endOfLine": "crlf",
-		"finalNewLine": true,
-		"labelColon": "on",
-		"operandSpace": "off",
-		"quotes": "single",
-		"trimWhitespace": true
-	},
-	"processors": ["mc68030", "mc68882"],
-	"vasm": {
+    "case": "lower",
+    "endOfLine": "crlf",
+    "finalNewLine": true,
+    "labelColon": {
+      "global": "on",
+      "local": "off"
+    },
+    "operandSpace": "off",
+    "quotes": "single",
+    "trimWhitespace": true
+  },
+  "processors": ["mc68000"],
+  "vasm": {
     "provideDiagnostics": true,
     "binPath": "vasmm68k_madmac",
     "args": [],

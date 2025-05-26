@@ -45,11 +45,11 @@ exit:																						;;; exit the app
 		trap				#1															; call gemdos (exit)
 
 
-section: bss
-old_sp: ds.l		1
-file_handle: ds.b 1
+section bss
+old_sp:         ds.l 1
+file_handle:    ds.b 1
 
 
-section: data
-file_name: dc.b	'D:\WORK\M68KAOC\DAY1\INPUT.TXT',0
+section data
+file_name:      dc.b 'D:\WORK\M68KAOC\DAY1\INPUT.TXT',0
 
