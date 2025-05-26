@@ -1,0 +1,29 @@
+{
+	"format": {
+		"align": {
+      "mnemonic": 4,
+      "operands": 16,
+      "comment": 48,
+      "operator": 0,
+      "value": 0,
+      "indentStyle": "space",
+      "tabSize": 8,
+      "autoExtend": "line"
+    },
+		"case": "lower",
+		"endOfLine": "crlf",
+		"finalNewLine": true,
+		"labelColon": "on",
+		"operandSpace": "off",
+		"quotes": "single",
+		"trimWhitespace": true
+	},
+	"processors": ["mc68030", "mc68882"],
+	"vasm": {
+    "provideDiagnostics": true,
+    "binPath": "vasmm68k_madmac",
+    "args": [],
+    "preferWasm": false,
+    "exclude": []
+  }
+}
