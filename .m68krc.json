@@ -7,7 +7,7 @@
       "operator": 0,
       "value": 0,
       "indentStyle": "space",
-      "tabSize": 4,
+      "tabSize": 2,
       "autoExtend": "block"
     },
     "case": "lower",
